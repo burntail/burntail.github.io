@@ -17,6 +17,8 @@
     }
     h1, h2, h3 {
       margin-top: 0;
+      font-size: 30px;
+      color: gray;
     }
     h2 {
       border-bottom: 2px solid #eaeaea;
@@ -52,6 +54,26 @@
       border-bottom: 1px solid #ccc; /* 아래쪽에 선 추가 */
     }
 
+    .flex-projectcontainer {
+      display: flex;
+      padding: 16px;
+      max-width: 800px;
+      margin: 0 auto;
+      align-items: center; /* 이미지와 텍스트 수직 정렬 */
+    }
+    .project-title {
+        flex: 0 0 200px;
+        font-weight: bold;
+        padding-right: 16px;
+        font-size: 24px;
+        color: wheat;
+    }
+    .project-content {
+        padding-left:  16px;
+        flex: 1;
+    }
+
+
     .image img {
         margin-right: 100px;
     }
@@ -66,7 +88,7 @@
 
     .content {
         padding-left:  16px;
-      flex: 1;
+        flex: 1;
     }
   </style>
 </head>
@@ -82,6 +104,14 @@
         <p>
             Android Developer
         </p>
+        <section id="contact">
+            <ul class="contact-icons">
+              <li><i class="fas fa-envelope"></i><a href="mailto:bumtae0209@naver.com">bumtae0209@naver.com</a></li>
+              <li><i class="fas fa-blog"></i><a href="https://burntailcordis.tistory.com/" target="_blank">블로그</a></li>
+              <li><i class="fab fa-github"></i><a href="https://github.com/your-profile" target="_blank">GitHub</a></li>
+              <li><i class="fab fa-linkedin"></i><a href="https://kr.linkedin.com/in/%EB%B2%94%ED%83%9C-%EA%B9%80-725777259?trk=people-guest_people_search-card" target="_blank">LinkedIn</a></li>
+            </ul>
+        </section>
     </div>
   </div>
   
@@ -129,12 +159,35 @@
             <ul>
             <li>MVVM</li>
             <li>MVI</li>
+            <li>Clean Architecture (with. Hilt)</li>
             </ul>
             <h3>Tools</h3>
             <ul>
             <li>Android Studio</li>
             <li>Git</li>
             <li>GitHub</li>
+            <li>Slack</li>
+            <li>Jira</li>
+            <li>Confluence</li>
+            </ul>
+        </section>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="title">Experience</div>
+    <div class="content">
+        <section id="LGU+">
+            <h3>LG U+</h3>
+            <ul>
+            <li>Android Developer (2023.09-)</li>
+            <li>개발PM (2022.08-2023.08)</li>
+            </ul>
+        </section>
+        <section id="한국동서발전">
+            <h3>한국동서발전</h3>
+            <ul>
+            <li>체험형 인턴 (2021.12-2022.02)</li>
             </ul>
         </section>
     </div>
@@ -143,11 +196,85 @@
   <div class="flex-container">
     <div class="title">Project</div>
     <div class="content">
+        <h1>IXI-O (Android) 서비스 개발 및 운영</h1>
+        <h2>(2025.01 - )</h2>
+        <div class="flex-projectcontainer">
+            <div class="project-title">
+                <p>
+                    IXI-O 출시
+                </p>
+            </div>
+            <div class="project-content">
+                <p>
+                    IXI - O Android 앱(S25 시리즈) 출시를 위한 앱 개발 수행
+                </p>
+                <p>
+                    25년 4월 PlayStore 기준 <b>약 10만명 이상</b> 유저 확보
+                </p>
+            </div>
+        </div>
+        <div class="flex-projectcontainer">
+            <div class="project-title">사용성 개선</div>
+            <div class="project-content">
+                <p>
+                    (TBD)
+                </p>
+            </div>
+        </div>
+        <h1>IPTV 홈서비스 (Android TV) 개발 및 운영</h1>
+        <h2>(2023.09 - 2024.12)</h2>
+        <div class="flex-projectcontainer">
+            <div class="project-title">AI추천 콘텐츠 제공</div>
+            <div class="project-content">
+                <p>
+                    홈 내 AI추천 카드를 노출시켜 AI추천 콘텐츠를 제공
+                </p>
+                <p>
+                    고객들에게 개인맟춤 콘텐츠를 제공하는 색다른 UX 제공
+                </p>
+            </div>
+        </div>
+        <div class="flex-projectcontainer">
+            <div class="project-title">VIP 유도</div>
+            <div class="project-content">
+                <p>
+                    VIP 컨텐츠 개선, 미가입채널 업셀링 프로젝트 등을 통한 VIP유저 편의성 및 VIP 콘텐츠 등 제공
+                </p>
+                <p>
+                    프리미엄 환승구독요금제 24년 7월 기준 유저 <b>5.7만명</b> 확보를 통해 VIP 유저 증대 이바지
+                </p>
+            </div>
+        </div>
+        <div class="flex-projectcontainer">
+            <div class="project-title">비밀번호 체계개선</div>
+            <div class="project-content">
+                <p>
+                    비밀번호 입력 UI 개편
+                </p>
+                <p>
+                    구매 프로세스들을 분석 후, 비밀번호 입력 프로세스 추가
+                </p>
+            </div>
+        </div>
+        <div class="flex-projectcontainer">
+            <div class="project-title">UI 개편</div>
+            <div class="project-content">
+                <p>
+                    패키지 상품 개선 런처 슬롯 개선, 마이메뉴 전면 개편
+                </p>
+                <p>
+                    Clean Architecture 도입을 통한 코드품질 증대 (반영율 전체 <b>약 10%</b> 증대)
+                </p>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="flex-container">
+    <div class="title">Licence</div>
+    <div class="content">
         <p>
-            ????
-        </p>
-        <p>
-            ?
+            빅데이터 분석기사 (한국데이터산업진흥원, 2023.12-)
         </p>
     </div>
   </div>
@@ -159,7 +286,7 @@
             <b>College:</b> UNIST(Ulsan National Institute of Science and Technology) 
         </p>
         <p>
-            (2017.03-2022.08)
+            Computer Engineering (2017.03-2022.08)
         </p>
         <p>
             <b>High School:</b> Chungnam Science High School 
@@ -167,19 +294,6 @@
         <p>
             (2014.03-2017.02)
         </p>
-    </div>
-  </div>
-  <div class="flex-container">
-    <div class="title">Contact</div>
-    <div class="content">
-        <section id="contact">
-            <ul class="contact-icons">
-              <li><i class="fas fa-envelope"></i><a href="mailto:bumtae0209@naver.com">bumtae0209@naver.com</a></li>
-              <li><i class="fas fa-blog"></i><a href="https://burntailcordis.tistory.com/" target="_blank">블로그</a></li>
-              <li><i class="fab fa-github"></i><a href="https://github.com/your-profile" target="_blank">GitHub</a></li>
-              <li><i class="fab fa-linkedin"></i><a href="https://kr.linkedin.com/in/%EB%B2%94%ED%83%9C-%EA%B9%80-725777259?trk=people-guest_people_search-card" target="_blank">LinkedIn</a></li>
-            </ul>
-          </section>
     </div>
   </div>
 
