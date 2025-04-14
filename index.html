@@ -19,6 +19,7 @@
       margin-top: 0;
       font-size: 30px;
       color: gray;
+      font-family:'Times New Roman', Times, serif;
     }
     h2 {
       border-bottom: 2px solid #eaeaea;
@@ -30,6 +31,7 @@
     }
     ul {
       padding-left: 20px;
+      font-size: 20px;
     }
     a {
       color: #0366d6;
@@ -40,9 +42,6 @@
     }
     .contact-icons li {
       margin-bottom: 10px;
-    }
-    body {
-      font-family: 'Noto Sans KR', sans-serif;
     }
 
     .flex-container {
@@ -59,18 +58,18 @@
       padding: 16px;
       max-width: 800px;
       margin: 0 auto;
-      align-items: center; /* 이미지와 텍스트 수직 정렬 */
+      align-items: start; /* 이미지와 텍스트 수직 정렬 */
+      flex-direction: column;
     }
     .project-title {
-        flex: 0 0 200px;
         font-weight: bold;
         padding-right: 16px;
         font-size: 24px;
         color: wheat;
     }
     .project-content {
-        padding-left:  16px;
         flex: 1;
+        font-size: 20px;
     }
 
 
@@ -82,13 +81,15 @@
       flex: 0 0 200px;
       font-weight: bold;
       padding-right: 16px;
-      font-size: 24px;
+      font-size: 36px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
       color: skyblue;
     }
 
     .content {
         padding-left:  16px;
         flex: 1;
+        font-size: 20px;
     }
   </style>
 </head>
@@ -205,20 +206,20 @@
                 </p>
             </div>
             <div class="project-content">
-                <p>
-                    IXI - O Android 앱(S25 시리즈) 출시를 위한 앱 개발 수행
-                </p>
-                <p>
-                    25년 4월 PlayStore 기준 <b>약 10만명 이상</b> 유저 확보
-                </p>
+                <ul>
+                    <li>IXI - O Android 앱(S25 시리즈) 출시를 위한 앱 개발 수행</li>
+                </ul>
+                <ul>
+                    <li>25년 4월 PlayStore 기준 <b>약 10만명 이상</b> 유저 확보</li>
+                </ul>
             </div>
         </div>
         <div class="flex-projectcontainer">
             <div class="project-title">사용성 개선</div>
             <div class="project-content">
-                <p>
-                    (TBD)
-                </p>
+                <ul>
+                    <li>(TBD)</li>
+                </ul>
             </div>
         </div>
         <h1>IPTV 홈서비스 (Android TV) 개발 및 운영</h1>
@@ -226,45 +227,45 @@
         <div class="flex-projectcontainer">
             <div class="project-title">AI추천 콘텐츠 제공</div>
             <div class="project-content">
-                <p>
-                    홈 내 AI추천 카드를 노출시켜 AI추천 콘텐츠를 제공
-                </p>
-                <p>
-                    고객들에게 개인맟춤 콘텐츠를 제공하는 색다른 UX 제공
-                </p>
+                <ul>
+                    <li>홈 내 AI추천 카드를 노출시켜 AI추천 콘텐츠를 제공</li>
+                </ul>
+                <ul>
+                    <li>고객들에게 개인맟춤 콘텐츠를 제공하는 색다른 UX 제공</li>
+                </ul>
             </div>
         </div>
         <div class="flex-projectcontainer">
             <div class="project-title">VIP 유도</div>
             <div class="project-content">
-                <p>
-                    VIP 컨텐츠 개선, 미가입채널 업셀링 프로젝트 등을 통한 VIP유저 편의성 및 VIP 콘텐츠 등 제공
-                </p>
-                <p>
-                    프리미엄 환승구독요금제 24년 7월 기준 유저 <b>5.7만명</b> 확보를 통해 VIP 유저 증대 이바지
-                </p>
+                <ul>
+                    <li>VIP 컨텐츠 개선, 미가입채널 업셀링 프로젝트 등을 통한 VIP유저 편의성 및 VIP 콘텐츠 등 제공</li>
+                </ul>
+                <ul>
+                    <li>프리미엄 환승구독요금제 24년 7월 기준 유저 <b>5.7만명</b> 확보를 통해 VIP 유저 증대 이바지</li>
+                </ul>
             </div>
         </div>
         <div class="flex-projectcontainer">
             <div class="project-title">비밀번호 체계개선</div>
             <div class="project-content">
-                <p>
-                    비밀번호 입력 UI 개편
-                </p>
-                <p>
-                    구매 프로세스들을 분석 후, 비밀번호 입력 프로세스 추가
-                </p>
+                <ul>
+                    <li>비밀번호 입력 UI 개편</li>
+                </ul>
+                <ul>
+                    <li>구매 프로세스들을 분석 후, 비밀번호 입력 프로세스 추가</li>
+                </ul>
             </div>
         </div>
         <div class="flex-projectcontainer">
             <div class="project-title">UI 개편</div>
             <div class="project-content">
-                <p>
-                    패키지 상품 개선 런처 슬롯 개선, 마이메뉴 전면 개편
-                </p>
-                <p>
-                    Clean Architecture 도입을 통한 코드품질 증대 (반영율 전체 <b>약 10%</b> 증대)
-                </p>
+                <ul>
+                    <li>패키지 상품 개선 런처 슬롯 개선, 마이메뉴 전면 개편</li>
+                </ul>
+                <ul>
+                    <li>Clean Architecture 도입을 통한 코드품질 증대 (반영율 전체 <b>약 10%</b> 증대)</li>
+                </ul>
             </div>
         </div>
         <h1>개발PM</h1>
@@ -272,9 +273,9 @@
         <div class="flex-projectcontainer">
             <div class="project-title">AP 신규 프로토콜 PoC 검증 및 출시</div>
             <div class="project-content">
-                <p>
-                    AP에 적용된 신규 프로토콜에 대한 품질 검증을 통한 Coverage 측정 및 간섭 환경 내 수신 결과 검증
-                </p>
+                <ul>
+                    <li>AP에 적용된 신규 프로토콜에 대한 품질 검증을 통한 Coverage 측정 및 간섭 환경 내 수신 결과 검증</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -283,9 +284,9 @@
   <div class="flex-container">
     <div class="title">Licence</div>
     <div class="content">
-        <p>
-            빅데이터 분석기사 (한국데이터산업진흥원, 2023.12-)
-        </p>
+        <ul>
+            <li>빅데이터 분석기사 (한국데이터산업진흥원, 2023.12-)</li>
+        </ul>
     </div>
   </div>
 
@@ -295,9 +296,9 @@
         <p>
             <b>College:</b> UNIST(Ulsan National Institute of Science and Technology) 
         </p>
-        <p>
-            Computer Engineering (2017.03-2022.08)
-        </p>
+        <ul>
+            <li>Computer Engineering (2017.03-2022.08)</li>
+        </ul>
         <p>
             <b>High School:</b> Chungnam Science High School 
         </p>
