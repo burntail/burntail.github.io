@@ -33,6 +33,9 @@
       padding-left: 20px;
       font-size: 20px;
     }
+    li {
+        padding-left: 10px;
+    }
     a {
       color: #0366d6;
       text-decoration: none;
@@ -91,6 +94,15 @@
         flex: 1;
         font-size: 20px;
     }
+
+    .word-marker {
+        background-color: gray;   /* 회색 배경 */
+        padding: 4px 8px;            /* 안쪽 여백 */
+        border-radius: 8px;          /* 둥근 사각형 */
+        display: inline-block;       /* 라인 안에 깔끔하게 표시 */
+        font-size: 14px;             /* 필요 시 폰트 크기 조절 */
+        color: white;                 /* 글자색 */
+    }
   </style>
 </head>
 <body>
@@ -134,7 +146,7 @@
         </p>
     </div>
   </div>
-
+  
   <div class="flex-container">
     <div class="title">Skill</div>
     <div class="content">
@@ -154,7 +166,7 @@
             <li>Retrofit</li>
             <li>Room</li>
             <li>Hilt</li>
-            <li>Kotlin Coroutines</li>
+            <li>Coroutines</li>
             </ul>
             <h3>Architecture</h3>
             <ul>
@@ -181,8 +193,24 @@
         <section id="LGU+">
             <h3>LG U+</h3>
             <ul>
-            <li>Android Developer (2023.09-)</li>
-            <li>개발PM (2022.08-2023.08)</li>
+                <p><b>IXI - O App</b> Android Developer (2025.01-)</p>
+                <li>U+ 고객의 AI전화 서비스를 위한 IXI - O 앱 개발</li>
+                <li>앱의 성능 분석을 위한 CPU 점유율, 앱 속도 등 테스트 및 분석</li>
+                <li>코드 리뷰와 세미나 등을 통한 팀 내 전문성 및 협업 역량 강화</li>
+                <p><span class="word-marker">Kotlin</span> <span class="word-marker">Coroutine</span> <span class="word-marker">Hilt</span> <span class="word-marker">Room</span>  <span class="word-marker">Retrofit</span> <span class="word-marker">Jetpack Compose</span></p>
+                <p><b>IPTV 홈서비스</b> Android Developer (2023.09-2024.12)</p>
+                <li>IPTV 홈앱 서비스 개발 </li>
+                <li>Clean Architecture 전환율 증대 이바지</li>
+                <li>코드 리뷰와 세미나를 통한 개발자 역량 및 경험 증대</li>
+                <p><span class="word-marker">Kotlin</span> <span class="word-marker">Java</span> <span class="word-marker">Coroutine</span> <span class="word-marker">Hilt</span> <span class="word-marker">Retrofit</span> </p>
+            </ul>
+            
+
+            <p>개발PM (2022.08-2023.08)</p>
+                <ul>
+                    <li>AP 신규 프로토콜 분석 및 성능 테스트</li>
+                </ul>
+            
             </ul>
         </section>
         <section id="한국동서발전">
@@ -228,10 +256,10 @@
             <div class="project-title">AI추천 콘텐츠 제공</div>
             <div class="project-content">
                 <ul>
-                    <li>홈 내 AI추천 카드를 노출시켜 AI추천 콘텐츠를 제공</li>
-                </ul>
-                <ul>
-                    <li>고객들에게 개인맟춤 콘텐츠를 제공하는 색다른 UX 제공</li>
+                    <li>홈 내 AI추천 카드를 노출시켜 AI추천 고객 맟춤 콘텐츠를 제공함으로써 색다른 UX 제공</li>
+                    <li>Coroutine 기반 비동기 처리 적용으로 null 안전성과 생산성 향상</li>
+                    <li>RESTful API를 통한 Retrofit 통신 수행</li>
+                    
                 </ul>
             </div>
         </div>
@@ -240,8 +268,8 @@
             <div class="project-content">
                 <ul>
                     <li>VIP 컨텐츠 개선, 미가입채널 업셀링 프로젝트 등을 통한 VIP유저 편의성 및 VIP 콘텐츠 등 제공</li>
-                </ul>
-                <ul>
+                    <li>Coroutine 기반 비동기 처리 적용으로 null 안전성과 생산성 향상</li>
+                    <li>RESTful API를 통한 Retrofit 통신 수행</li>
                     <li>프리미엄 환승구독요금제 24년 7월 기준 유저 <b>5.7만명</b> 확보를 통해 VIP 유저 증대 이바지</li>
                 </ul>
             </div>
@@ -251,8 +279,6 @@
             <div class="project-content">
                 <ul>
                     <li>비밀번호 입력 UI 개편</li>
-                </ul>
-                <ul>
                     <li>구매 프로세스들을 분석 후, 비밀번호 입력 프로세스 추가</li>
                 </ul>
             </div>
@@ -262,8 +288,8 @@
             <div class="project-content">
                 <ul>
                     <li>패키지 상품 개선, 런처 슬롯 개선, 마이메뉴 전면 개편 등 UI 작업 수행</li>
-                </ul>
-                <ul>
+                    <li>Java → Kotlin 일부 전환 및 Coroutine 기반 비동기 처리 적용으로 null 안전성과 생산성 향상</li>
+                    <li>RESTful API를 통한 Retrofit 통신 수행</li>
                     <li>Clean Architecture 도입을 통한 코드품질 증대 (반영율 전체 <b>약 10%</b> 증대)</li>
                 </ul>
             </div>
